@@ -1,0 +1,13 @@
+{
+  "id": "dieta-pri-lecbe",
+  "title": "Dieta při léčbě duševních onemocnění",
+  "theme": "metabolic-psychiatry",
+  "type": "infographic",
+  "asset_url": "/assets/infographics/dieta-pri-lecbe.png",
+  "sources": [
+    "nzip-dieta-uvod",
+    "paul-nutrient-deficiencies",
+    "bretsnajdrova-dietologie"
+  ],
+  "tags": ["dieta", "psychiatrie", "vzdělávání"]
+}

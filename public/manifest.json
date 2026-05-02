@@ -1,0 +1,191 @@
+{
+  "infographics": [
+    {
+      "id": "dieta-pri-lecbe",
+      "title": "Dieta při léčbě duševních onemocnění",
+      "theme": "metabolic-psychiatry",
+      "type": "infographic",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/infographics/dieta-pri-lecbe.png",
+      "sources": [
+        "nzip-dieta-uvod",
+        "paul-nutrient-deficiencies",
+        "bretsnajdrova-dietologie"
+      ],
+      "tags": [
+        "dieta",
+        "psychiatrie",
+        "vzdělávání"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/infographics/metabolic-psychiatry/post.md"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "jidlo-jako-evolucni-dudlik",
+      "title": "Jídlo jako evoluční dudlík pro mozek",
+      "theme": "metabolic-psychiatry",
+      "type": "episode",
+      "subtype": "summary",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Jídlo_jako_evoluční_dudlík_pro_mozek.m4a",
+      "sources": [
+        "adicare-zavislost-na-jidle",
+        "sunrise-detox-amino-acid-therapy"
+      ],
+      "tags": [
+        "evoluce",
+        "mozek",
+        "závislost"
+      ]
+    },
+    {
+      "id": "keto-dieta-jako-lek",
+      "title": "Keto dieta jako lék na psychiku",
+      "theme": "metabolic-psychiatry",
+      "type": "episode",
+      "subtype": "summary",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Keto_dieta_jako_lék_na_psychiku.m4a",
+      "sources": [
+        "campbell-keto-bipolar",
+        "ede-ketogenic-psychiatry"
+      ],
+      "tags": [
+        "keto",
+        "psychiatrie",
+        "souhrn"
+      ]
+    },
+    {
+      "id": "lecba-nemoci-keto-dietou",
+      "title": "Léčba vážných duševních nemocí keto dietou",
+      "theme": "metabolic-psychiatry",
+      "type": "episode",
+      "subtype": "debate",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Léčba_vážných_duševních_nemocí_keto_dietou.m4a",
+      "sources": [
+        "campbell-keto-bipolar",
+        "swiss-re-metabolic-psychiatry",
+        "ede-ketogenic-psychiatry"
+      ],
+      "tags": [
+        "debata",
+        "keto",
+        "vážná-onemocnění"
+      ]
+    }
+  ],
+  "sources": {
+    "adicare-zavislost-na-jidle": {
+      "id": "adicare-zavislost-na-jidle",
+      "title": "Závislost na jídle, psychogenní přejídání",
+      "publisher": "AdiCare (Psychological and Psychiatric Clinic)",
+      "summary": "Article focusing on food addiction and psychogenic overeating, providing clinical insights from the AdiCare clinic.",
+      "links": {
+        "url": "https://adicare.cz/"
+      }
+    },
+    "bretsnajdrova-dietologie": {
+      "id": "bretsnajdrova-dietologie",
+      "title": "Dietologie",
+      "author": "Alena Bretšnajdrová, Dana Müllerová, Štěpán Svačina",
+      "publisher": "Triton",
+      "isbn": "978-80-7387-699-9",
+      "summary": "Komplexní učebnice dietologie zaměřená na klinickou praxi a nutriční management různých onemocnění.",
+      "links": {}
+    },
+    "campbell-keto-bipolar": {
+      "id": "campbell-keto-bipolar",
+      "title": "Keto Diets for Bipolar",
+      "author": "Dr. Iain Campbell",
+      "affiliation": "University of Edinburgh",
+      "date": "2023",
+      "publication": "FMMH 2023 - Psychiatry Redefined",
+      "summary": "Details a pilot study on the use of a ketogenic diet for bipolar disorder.",
+      "links": {
+        "doi": "10.1101/2023.05.28.23290595",
+        "url": "https://www.ketobipolar.com"
+      }
+    },
+    "culinary-services-nutrition-recovery": {
+      "id": "culinary-services-nutrition-recovery",
+      "title": "The Importance of Nutrition in Substance Use Recovery",
+      "publisher": "Culinary Services Group",
+      "summary": "A guide highlighting the critical role of dietitians and nutrition services in the recovery process from substance use disorders.",
+      "links": {
+        "url": "https://www.culinaryservicesgroup.com"
+      }
+    },
+    "ede-ketogenic-psychiatry": {
+      "id": "ede-ketogenic-psychiatry",
+      "title": "Evidence Base for the Use of Ketogenic Diets in Psychiatry",
+      "author": "Dr. Georgia Ede, MD",
+      "organization": "Diagnosis Diet",
+      "summary": "Outlines the clinical rationale and ongoing clinical trials for ketogenic metabolic therapy in neuropsychiatric conditions.",
+      "links": {
+        "url": "https://www.diagnosisdiet.com/contact"
+      }
+    },
+    "nzip-dieta-uvod": {
+      "id": "nzip-dieta-uvod",
+      "title": "Dieta u psychiatrických onemocnění – úvod",
+      "author": "Czech Medical Association of J. E. Purkyně",
+      "publisher": "National Health Information Portal (NZIP)",
+      "summary": "Discusses diets in psychiatric disorders from a clinical perspective in the Czech Republic.",
+      "links": {
+        "url": "http://www.nzip.cz/clanek/528-dieta-u-psychiatrickych-onemocneni-uvod"
+      }
+    },
+    "paul-nutrient-deficiencies": {
+      "id": "paul-nutrient-deficiencies",
+      "title": "Nutrient deficiencies in patients with psychiatric disorders",
+      "authors": "Liza Paul et al.",
+      "journal": "International Journal of Research in Medical Sciences",
+      "date": "October 2025",
+      "summary": "Original research article investigating the prevalence and impact of nutrient deficiencies in patients diagnosed with psychiatric disorders.",
+      "links": {
+        "doi": "10.18203/2320-6012.ijrms20253135"
+      }
+    },
+    "richards-ethics-eating-disorders": {
+      "id": "richards-ethics-eating-disorders",
+      "title": "Ethics in eating disorders",
+      "author": "Lorna Richards (Independent Psychiatrist)",
+      "publisher": "Cutting Edge Psychiatry in Practice",
+      "date": "2024",
+      "summary": "Discusses ethical considerations and challenges in the treatment and management of eating disorders.",
+      "links": {
+        "url": "https://CEPiP.org"
+      }
+    },
+    "schaaf-mediterranean-diet-depression": {
+      "id": "schaaf-mediterranean-diet-depression",
+      "title": "The Impact of the Mediterranean Diet on Depression: A Narrative Review",
+      "author": "Emma Kate Schaaf",
+      "institution": "University of Mississippi",
+      "date": "May 2025",
+      "type": "Undergraduate Honors Thesis",
+      "summary": "A narrative review exploring the correlation between Mediterranean diet adherence and depressive symptoms.",
+      "links": {
+        "url": "https://egrove.olemiss.edu/hon_thesis/3292"
+      }
+    },
+    "sunrise-detox-amino-acid-therapy": {
+      "id": "sunrise-detox-amino-acid-therapy",
+      "title": "How Is Amino Acid Therapy Used To Treat Addiction?",
+      "publisher": "Sunrise Detox Center",
+      "management": "Praesum Healthcare",
+      "summary": "A web article explaining the application and benefits of amino acid therapy in the context of addiction treatment.",
+      "links": {
+        "url": "https://sunrisedetox.com/"
+      }
+    },
+    "swiss-re-metabolic-psychiatry": {
+      "id": "swiss-re-metabolic-psychiatry",
+      "title": "Metabolic Psychiatry – A new paradigm?",
+      "publisher": "Swiss Re",
+      "summary": "Explores metabolic psychiatry as a potential new paradigm in the management of mental health disorders.",
+      "links": {
+        "url": "https://www.swissre.com"
+      }
+    }
+  }
+}
