@@ -24,9 +24,9 @@ This repository serves as a headless CMS and asset host for the Vue Education pl
   - [View Sources](https://nightguarder.github.io/Vue-Education-Materials/content/sources/)
 
 ### 2. Podcast Episodes
-- **[Keto dieta jako lék na psychiku](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Keto_dieta_jako_le%CC%81k_na_psychiku.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
-- **[Jídlo jako evoluční dudlík pro mozek](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Ji%CC%81dlo_jako_evoluc%CC%8Cni%CC%81_dudli%CC%81k_pro_mozek.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
-- **[Léčba vážných duševních nemocí keto dietou](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Le%CC%81c%CC%8Cba_va%CC%81z%CC%8Cny%CC%81ch_dus%CC%8Cevni%CC%81ch_nemoci%CC%81_keto_dietou.m4a)** (Debate) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
+- **[Keto dieta jako lék na psychiku](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Keto_dieta_jako_lék_na_psychiku.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
+- **[Jídlo jako evoluční dudlík pro mozek](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Jídlo_jako_evoluční_dudlík_pro_mozek.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
+- **[Léčba vážných duševních nemocí keto dietou](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Léčba_vážných_duševních_nemocí_keto_dietou.m4a)** (Debate) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
 
 ---
 
