@@ -25,5 +25,24 @@ This repository serves as a headless CMS and asset host for the Vue Education pl
 ## Technical Integration
 The primary API endpoint for the Vue application is the `manifest.json`.
 
-- **Manifest URL**: `https://[username].github.io/[repo-name]/manifest.json`
-- **Asset Root**: `/public/assets/`
+- **Manifest URL**: `https://nightguarder.github.io/Vue-Education-Materials/manifest.json`
+- **Asset Root**: `https://nightguarder.github.io/Vue-Education-Materials/assets/`
+
+## Development and Maintenance
+
+### Prerequisites
+- **Node.js**: Required to run management scripts.
+- **ImageMagick**: Required for automatic thumbnail generation.
+
+### Running Scripts
+To update the manifest and regenerate thumbnails after adding new content:
+
+```bash
+# Generate manifest and thumbnails
+node scripts/generate-manifest.js
+```
+
+### Notes on Content
+- **Large Assets**: Audio (`.m4a`) and high-res Infographics (`.png`) should be placed in `public/assets/audio/` and `public/assets/infographics/` respectively.
+- **Metadata**: Every new material must have a corresponding `data.json` and `.md` file in the `content/` directory to be indexed.
+- **Thumbnails**: Infographic thumbnails are automatically generated as optimized `.webp` files. Podcasts use the default branded logo.

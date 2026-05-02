@@ -36,7 +36,8 @@
         "evoluce",
         "mozek",
         "závislost"
-      ]
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
     },
     {
       "id": "keto-dieta-jako-lek",
@@ -53,7 +54,8 @@
         "keto",
         "psychiatrie",
         "souhrn"
-      ]
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
     },
     {
       "id": "lecba-nemoci-keto-dietou",
@@ -71,7 +73,8 @@
         "debata",
         "keto",
         "vážná-onemocnění"
-      ]
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
     }
   ],
   "sources": {

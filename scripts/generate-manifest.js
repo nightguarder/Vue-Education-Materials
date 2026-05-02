@@ -70,6 +70,9 @@ episodeDataFiles.forEach(file => {
     const notesPath = path.join(dir, 'notes.md');
 
     data.asset_url = normalizeAssetUrl(data.asset_url);
+    
+    // Add default podcast thumbnail
+    data.thumbnail_url = `${BASE_URL}/assets/thumbnails/Vue Podcast logo.png`;
 
     if (fs.existsSync(notesPath)) {
         data.content_path = `${BASE_URL}/content/${path.relative(CONTENT_DIR, notesPath)}`;
