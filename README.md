@@ -2,6 +2,12 @@
 
 This repository serves as a headless CMS and asset host for the Vue Education platform. It provides structured data, metadata, and assets for educational materials.
 
+## Quick Navigation
+
+- **[View Manifest (API)](https://nightguarder.github.io/Vue-Education-Materials/manifest.json)** - Structured JSON index of all materials
+- **[Browse Assets Folder](https://nightguarder.github.io/Vue-Education-Materials/assets/)** - Direct access to all infographics, audio, and thumbnails
+- **[Browse Content Folder](https://nightguarder.github.io/Vue-Education-Materials/content/)** - Markdown posts and JSON sources
+
 ## Table of Contents
 
 - [Topic: Diet During Psychiatric Treatment (Metabolic Psychiatry)](#topic-diet-during-psychiatric-treatment-metabolic-psychiatry)
@@ -13,12 +19,14 @@ This repository serves as a headless CMS and asset host for the Vue Education pl
 ## Topic: Diet During Psychiatric Treatment (Metabolic Psychiatry)
 
 ### 1. Infographics
-- **Dieta při léčbě duševních onemocnění**
+- **[Dieta při léčbě duševních onemocnění](https://nightguarder.github.io/Vue-Education-Materials/assets/infographics/dieta-pri-lecbe.png)** ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/dieta-pri-lecbe-thumb.webp))
+  - [Read more (Post)](https://nightguarder.github.io/Vue-Education-Materials/content/infographics/metabolic-psychiatry/post.md)
+  - [View Sources](https://nightguarder.github.io/Vue-Education-Materials/content/sources/)
 
 ### 2. Podcast Episodes
-- **Keto dieta jako lék na psychiku** (Summary)
-- **Jídlo jako evoluční dudlík pro mozek** (Summary)
-- **Léčba vážných duševních nemocí keto dietou** (Debate)
+- **[Keto dieta jako lék na psychiku](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Keto_dieta_jako_le%CC%81k_na_psychiku.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
+- **[Jídlo jako evoluční dudlík pro mozek](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Ji%CC%81dlo_jako_evoluc%CC%8Cni%CC%81_dudli%CC%81k_pro_mozek.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
+- **[Léčba vážných duševních nemocí keto dietou](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Le%CC%81c%CC%8Cba_va%CC%81z%CC%8Cny%CC%81ch_dus%CC%8Cevni%CC%81ch_nemoci%CC%81_keto_dietou.m4a)** (Debate) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
 
 ---
 
@@ -43,6 +51,6 @@ node scripts/generate-manifest.js
 ```
 
 ### Notes on Content
-- **Large Assets**: Audio (`.m4a`) and high-res Infographics (`.png`) should be placed in `public/assets/audio/` and `public/assets/infographics/` respectively.
+- **Large Assets**: Audio (`.m4a`) and high-res Infographics (`.png`) should be placed in `assets/audio/` and `assets/infographics/` respectively.
 - **Metadata**: Every new material must have a corresponding `data.json` and `.md` file in the `content/` directory to be indexed.
-- **Thumbnails**: Infographic thumbnails are automatically generated as optimized `.webp` files. Podcasts use the default branded logo.
+- **Thumbnails**: Infographic thumbnails are automatically generated as optimized `.webp` files in `assets/thumbnails/`. Podcasts use the default branded logo at `assets/thumbnails/Vue Podcast logo.png`.
