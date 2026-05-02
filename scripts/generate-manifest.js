@@ -3,11 +3,10 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const CONTENT_DIR = path.join(__dirname, '../content');
-const PUBLIC_DIR = path.join(__dirname, '../public');
+const ROOT_DIR = path.join(__dirname, '..');
 const BASE_URL = 'https://nightguarder.github.io/Vue-Education-Materials';
 
 function getFiles(dir, filename) {
-// ... existing code ...
     const results = [];
     const list = fs.readdirSync(dir);
     list.forEach(file => {
@@ -24,7 +23,7 @@ function getFiles(dir, filename) {
 
 function normalizeAssetUrl(url) {
     if (url.startsWith('/')) {
-        return `${BASE_URL}${url}`;
+        return BASE_URL + url;
     }
     return url;
 }
@@ -57,7 +56,7 @@ infoDataFiles.forEach(file => {
     }
 
     if (fs.existsSync(postPath)) {
-        data.content_path = `${BASE_URL}/content/${path.relative(CONTENT_DIR, postPath)}`;
+        data.content_path = BASE_URL + '/content/' + path.relative(CONTENT_DIR, postPath);
     }
     manifest.infographics.push(data);
 });
@@ -72,30 +71,26 @@ episodeDataFiles.forEach(file => {
     data.asset_url = normalizeAssetUrl(data.asset_url);
     
     // Add default podcast thumbnail
-    data.thumbnail_url = `${BASE_URL}/assets/thumbnails/Vue Podcast logo.png`;
+    data.thumbnail_url = BASE_URL + '/assets/thumbnails/Vue Podcast logo.png';
 
     if (fs.existsSync(notesPath)) {
-        data.content_path = `${BASE_URL}/content/${path.relative(CONTENT_DIR, notesPath)}`;
+        data.content_path = BASE_URL + '/content/' + path.relative(CONTENT_DIR, notesPath);
     }
     manifest.episodes.push(data);
 });
 
-if (!fs.existsSync(PUBLIC_DIR)) {
-    fs.mkdirSync(PUBLIC_DIR);
-}
-
 fs.writeFileSync(
-    path.join(PUBLIC_DIR, 'manifest.json'),
+    path.join(ROOT_DIR, 'manifest.json'),
     JSON.stringify(manifest, null, 2)
 );
 
-console.log('Manifest generated successfully at /public/manifest.json');
+console.log('Manifest generated successfully at /manifest.json');
 
 // Trigger thumbnail generation
 try {
     console.log('Triggering thumbnail generation...');
     const thumbScript = path.join(__dirname, 'generate-thumbnails.js');
-    execSync(`node "${thumbScript}"`, { stdio: 'inherit' });
+    execSync('node "' + thumbScript + '"', { stdio: 'inherit' });
 } catch (e) {
     console.error('Thumbnail generation failed, but manifest was created.');
 }
