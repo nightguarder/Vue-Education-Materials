@@ -1,11 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const CONTENT_DIR = path.join(__dirname, '../content');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 const BASE_URL = 'https://nightguarder.github.io/Vue-Education-Materials';
 
 function getFiles(dir, filename) {
+// ... existing code ...
     const results = [];
     const list = fs.readdirSync(dir);
     list.forEach(file => {
@@ -85,3 +87,12 @@ fs.writeFileSync(
 );
 
 console.log('Manifest generated successfully at /public/manifest.json');
+
+// Trigger thumbnail generation
+try {
+    console.log('Triggering thumbnail generation...');
+    const thumbScript = path.join(__dirname, 'generate-thumbnails.js');
+    execSync(`node "${thumbScript}"`, { stdio: 'inherit' });
+} catch (e) {
+    console.error('Thumbnail generation failed, but manifest was created.');
+}
