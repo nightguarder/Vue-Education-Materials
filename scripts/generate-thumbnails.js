@@ -3,12 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
-const THUMB_DIR = path.join(ROOT_DIR, 'assets/thumbnails');
 const MANIFEST_PATH = path.join(ROOT_DIR, 'manifest.json');
-
-if (!fs.existsSync(THUMB_DIR)) {
-    fs.mkdirSync(THUMB_DIR, { recursive: true });
-}
+const BASE_URL = 'https://nightguarder.github.io/Vue-Education-Materials';
 
 function generateThumbnails() {
     if (!fs.existsSync(MANIFEST_PATH)) {
@@ -19,30 +15,41 @@ function generateThumbnails() {
     const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
     let updated = false;
 
-    manifest.infographics.forEach((item, index) => {
-        const urlParts = item.asset_url.split('/assets/');
-        if (urlParts.length < 2) return;
+    const sections = ['infographics', 'presentations'];
 
-        const relativeAssetPath = 'assets/' + urlParts[1];
-        const sourcePath = path.join(ROOT_DIR, relativeAssetPath);
-        const thumbFilename = item.id + '-thumb.webp';
-        const destPath = path.join(THUMB_DIR, thumbFilename);
+    sections.forEach(section => {
+        if (!manifest[section]) return;
+        
+        manifest[section].forEach((item, index) => {
+            if (!item.asset_url || !item.asset_url.startsWith(BASE_URL)) return;
+            
+            const relativeUrlPath = item.asset_url.substring(BASE_URL.length);
+            const sourcePath = path.join(ROOT_DIR, relativeUrlPath);
+            
+            if (fs.existsSync(sourcePath)) {
+                const dir = path.dirname(sourcePath);
+                const thumbFilename = 'thumbnail.webp';
+                const destPath = path.join(dir, thumbFilename);
 
-        if (fs.existsSync(sourcePath)) {
-            console.log('Generating thumbnail for ' + item.id + '...');
-            try {
-                execSync('magick "' + sourcePath + '" -resize 400x -quality 80 "' + destPath + '"');
-                
-                const baseUrl = item.asset_url.split('/assets/')[0];
-                manifest.infographics[index].thumbnail_url = baseUrl + '/assets/thumbnails/' + thumbFilename;
-                updated = true;
-                console.log('Successfully created ' + destPath);
-            } catch (error) {
-                console.error('Failed to generate thumbnail for ' + item.id + ':', error.message);
+                console.log('Generating thumbnail for ' + item.id + ' (' + section + ')...');
+                try {
+                    // For PDFs, we take the first page [0]
+                    const inputSpec = sourcePath.toLowerCase().endsWith('.pdf') ? sourcePath + '[0]' : sourcePath;
+                    
+                    execSync('magick "' + inputSpec + '" -resize 400x -quality 80 "' + destPath + '"');
+                    
+                    const relativeDestPath = path.relative(ROOT_DIR, destPath);
+                    manifest[section][index].thumbnail_url = BASE_URL + '/' + relativeDestPath;
+                    updated = true;
+                    console.log('Successfully created ' + destPath);
+                } catch (error) {
+                    console.error('Failed to generate thumbnail for ' + item.id + ':', error.message);
+                    if (sourcePath.toLowerCase().endsWith('.pdf')) {
+                        console.warn('Note: PDF thumbnail generation requires Ghostscript to be installed.');
+                    }
+                }
             }
-        } else {
-            console.warn('Source file not found for ' + item.id + ': ' + sourcePath);
-        }
+        });
     });
 
     if (updated) {
