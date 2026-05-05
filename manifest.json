@@ -1,6 +1,48 @@
 {
   "infographics": [
     {
+      "id": "dusevni-zdravi-a-zivotni-styl-1",
+      "title": "Duševní zdraví a životní styl I",
+      "theme": "mental-health",
+      "type": "infographic",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/image.png",
+      "tags": [
+        "duševní zdraví",
+        "životní styl",
+        "prevence"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/post.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/thumbnail.webp"
+    },
+    {
+      "id": "dusevni-zdravi-a-zivotni-styl-2",
+      "title": "Duševní zdraví a životní styl II",
+      "theme": "mental-health",
+      "type": "infographic",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/image.png",
+      "tags": [
+        "duševní zdraví",
+        "životní styl",
+        "léčba"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/post.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/thumbnail.webp"
+    },
+    {
+      "id": "dusevni-zdravi-a-zivotni-styl-3",
+      "title": "Duševní zdraví a životní styl III",
+      "theme": "mental-health",
+      "type": "infographic",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/image.png",
+      "tags": [
+        "duševní zdraví",
+        "životní styl",
+        "celostní přístup"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/post.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/thumbnail.webp"
+    },
+    {
       "id": "dieta-pri-lecbe",
       "title": "Dieta při léčbě duševních onemocnění",
       "theme": "metabolic-psychiatry",
@@ -21,6 +63,25 @@
     }
   ],
   "episodes": [
+    {
+      "id": "porozumet-depresi-a-uzkosti",
+      "title": "Jak porozumět depresi a překonat úzkost",
+      "theme": "mental-health",
+      "type": "episode",
+      "subtype": "summary",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/audio.m4a",
+      "tags": [
+        "deprese",
+        "úzkost",
+        "duševní zdraví",
+        "léčba"
+      ],
+      "sources": [
+        "prasko-depresivni-porucha",
+        "psymed-stres-uzkost"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
+    },
     {
       "id": "jidlo-jako-evolucni-dudlik",
       "title": "Jídlo jako evoluční dudlík pro mozek",
@@ -79,6 +140,21 @@
   ],
   "presentations": [
     {
+      "id": "path-to-relief",
+      "title": "Path to Relief: Průvodce duševním zdravím",
+      "theme": "mental-health",
+      "type": "presentation",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/presentation.pdf",
+      "tags": [
+        "deprese",
+        "úzkost",
+        "léčba",
+        "životní styl"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/page.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/thumbnail.webp"
+    },
+    {
       "id": "the-metabolic-blueprint",
       "title": "The Metabolic Blueprint",
       "theme": "metabolic-psychiatry",
@@ -94,6 +170,149 @@
     }
   ],
   "sources": {
+    "behavior-ln-v-hov-intervence-u-v-n-du-evn-nemocn-ch": {
+      "id": "behavior-ln-v-hov-intervence-u-v-n-du-evn-nemocn-ch",
+      "title": "Behaviorální váhová intervence u vážně duševně nemocných",
+      "author": "Daumit, G. L. et al.",
+      "summary": "Významný pokrok v úbytku váhy a obvodu pasu u pacientů s vážným duševním onemocněním se dostavil po 18 měsících lifestylové intervence.",
+      "citation": "Daumit et al. (2013). A behavioral weight-loss intervention in persons with serious mental illness. New England Journal of Medicine, 368(17), 1594-1602.",
+      "publisher": "Duševní zdraví a životní styl - Na rovinu",
+      "links": {
+        "url": ""
+      }
+    },
+    "cvi-en-jako-l-ba-deprese-porovn-n-s-medikac": {
+      "id": "cvi-en-jako-l-ba-deprese-porovn-n-s-medikac",
+      "title": "Cvičení jako léčba deprese (porovnání s medikací)",
+      "author": "Babyak, M. et al.",
+      "summary": "Po 6 měsících se plně zotavilo 90 % participantů ve skupině se samotným cvičením, což bylo více než ve skupině s pouze farmakologickou medikací (50–60 %).",
+      "citation": "Babyak et al. (2000). Exercise treatment for major depression: maintenance of therapeutic benefit at 10 months. Psychosomatic medicine, 62(5), 633-638.",
+      "publisher": "Duševní zdraví a životní styl - Na rovinu",
+      "links": {
+        "url": ""
+      }
+    },
+    "depresivn-porucha-a-jak-ji-p-ekonat": {
+      "id": "depresivn-porucha-a-jak-ji-p-ekonat",
+      "title": "Depresivní porucha a jak ji překonat",
+      "author": "Praško, J., Buliková, B., Sigmundová, Z.",
+      "summary": "Léčba deprese vyžaduje kombinaci farmakoterapie a psychoterapie (např. KBT); pohybová aktivita a pravidelný režim mají podpůrný antidepresivní účinek.",
+      "citation": "Praško, J., Buliková, B., Sigmundová, Z. (2012). Depresivní porucha a jak ji překonat. 2. vydání. Praha: Galén.",
+      "publisher": "Deprese.com",
+      "links": {
+        "url": ""
+      }
+    },
+    "doporu-en-postupy-psychiatrick-p-e-pro-gad-2017": {
+      "id": "doporu-en-postupy-psychiatrick-p-e-pro-gad-2017",
+      "title": "Doporučené postupy psychiatrické péče pro GAD (2017)",
+      "author": "Ján Praško, Pavel Doubek, Luboš Janů",
+      "summary": "U těžkých forem GAD je nejúčinnější kombinace farmakoterapie (SSRI, SNRI, pregabalin) a KBT. Sportovní aktivity přispívají ke zvýšení kvality života odbouráváním stresových hormonů.",
+      "citation": "3, 4",
+      "publisher": "Postup v léčbě generalizované úzkostné poruchy (GAD) / NZIP",
+      "links": {
+        "url": "Psychiatrie/Léčebné standardy"
+      }
+    },
+    "efektivita-kbt-v-denn-m-stacion-i-u-pacient-s-zkostn-mi-poruchami": {
+      "id": "efektivita-kbt-v-denn-m-stacion-i-u-pacient-s-zkostn-mi-poruchami",
+      "title": "Efektivita KBT v denním stacionáři u pacientů s úzkostnými poruchami",
+      "author": "Lenka Navrátilová, Marek Preiss",
+      "summary": "Sedmitýdenní intenzivní program KBT doplněný o asertivitu, arteterapii a pohybovou terapii je efektivní pro zvládnutí projevů stresu a úzkosti u motivovaných pacientů.",
+      "citation": "8",
+      "publisher": "Posudek vedoucí práce: Efektivita kognitivně-behaviorální terapie v denním stacionáři",
+      "links": {
+        "url": "Klinická psychologie/Terapie"
+      }
+    },
+    "keeping-the-body-in-mind-kbim": {
+      "id": "keeping-the-body-in-mind-kbim",
+      "title": "Keeping the Body in Mind (KBIM)",
+      "author": "Teasdale et al.; Lederman et al.; Watkins; Ward; Curtis",
+      "summary": "12týdenní holistická intervence (cvičení a výživa) u mladých lidí po první epizodě psychózy zabránila nárůstu váhy a obvodu pasu ve srovnání se standardní léčbou.",
+      "citation": "Teasdale et al. (2019). The effectiveness of the Keeping the Body in Mind Xtend pilot lifestyle program... Obesity Research & Clinical Practice, 13(2), 214-216.",
+      "publisher": "Duševní zdraví a životní styl - Na rovinu",
+      "links": {
+        "url": ""
+      }
+    },
+    "lifestylov-intervence-a-cvi-en-pro-pomoc-p-i-stresu-a-zkostech": {
+      "id": "lifestylov-intervence-a-cvi-en-pro-pomoc-p-i-stresu-a-zkostech",
+      "title": "Lifestylové intervence a cvičení pro pomoc při stresu a úzkostech",
+      "author": "PSYMED (Redakce)",
+      "summary": "Pravidelná dechová cvičení (metoda 3-3-6), jógové pozice a progresivní uvolňování svalů účinně pomáhají k okamžitému zvládnutí úzkostných stavů a redukci fyzického napětí.",
+      "citation": "2",
+      "publisher": "5 jednoduchých cvičení pro okamžitou pomoc při stresu a úzkostech - PSYMED",
+      "links": {
+        "url": "Lifestyle/Psychologie"
+      }
+    },
+    "metaanal-za-fyzick-aktivity-a-incidentn-deprese": {
+      "id": "metaanal-za-fyzick-aktivity-a-incidentn-deprese",
+      "title": "Metaanalýza fyzické aktivity a incidentní deprese",
+      "author": "Schuch, F. B. et al.",
+      "summary": "Fyzická aktivita snižuje riziko vzniku deprese napříč všemi věkovými kategoriemi a zeměmi; vyšší kardiovaskulární zdatnost snižuje riziko o 76 %.",
+      "citation": "Schuch et al. (2018). Physical activity and incident depression: a meta-analysis. American Journal of Psychiatry, 175(7), 631-648.",
+      "publisher": "Duševní zdraví a životní styl - Na rovinu",
+      "links": {
+        "url": ""
+      }
+    },
+    "rozd-l-mezi-depres-a-zkost": {
+      "id": "rozd-l-mezi-depres-a-zkost",
+      "title": "Rozdíl mezi depresí a úzkostí",
+      "author": "MUDr. Lenka Trdlová",
+      "summary": "Deprese je charakterizována patologicky pokleslou náladou trvající alespoň 14 dní, zatímco úzkost je chorobná, pokud je intenzivní a bez reálného nebezpečí. Doplňkově pomáhá hořčík a fytomedicína.",
+      "citation": "6",
+      "publisher": "Deprese a úzkost: Jaký je mezi nimi rozdíl? - Ordinace.cz",
+      "links": {
+        "url": "Psychiatrie/Diagnostika"
+      }
+    },
+    "sedav-chov-n-a-riziko-deprese": {
+      "id": "sedav-chov-n-a-riziko-deprese",
+      "title": "Sedavé chování a riziko deprese",
+      "author": "Zhai, L., Zhang, Y., & Zhang, D.",
+      "summary": "Riziko rozvinutí deprese je o 14 % vyšší u lidí, kteří tráví sezením 8 a více hodin denně, ve srovnání s aktivnějšími jedinci.",
+      "citation": "Zhai, L. et al. (2015). Sedentary behaviour and the risk of depression: a meta-analysis. British journal of sports medicine, 49(11), 705-709.",
+      "publisher": "Duševní zdraví a životní styl - Na rovinu",
+      "links": {
+        "url": ""
+      }
+    },
+    "vliv-optogenetick-manipulace-parvalbumin-pozitivn-ch-interneuron-na-chov-n": {
+      "id": "vliv-optogenetick-manipulace-parvalbumin-pozitivn-ch-interneuron-na-chov-n",
+      "title": "Vliv optogenetické manipulace parvalbumin-pozitivních interneuronů na chování",
+      "author": "Bc. Barbara Pavlíková, prof. RNDr. Aleš Stuchlík, Ph.D.",
+      "summary": "Výzkum prokázal, že frekvence stimulace PV interneuronů má vliv na úzkostné projevy; specificky nízkofrekvenční stimulace (4 Hz) měla nedostatečný inhibiční efekt.",
+      "citation": "9",
+      "publisher": "Pavlíková_Posudek školitele - Univerzita Karlova",
+      "links": {
+        "url": "Neurobiologie/Výzkum"
+      }
+    },
+    "vztah-vnit-n-e-i-a-zkostnosti": {
+      "id": "vztah-vnit-n-e-i-a-zkostnosti",
+      "title": "Vztah vnitřní řeči a úzkostnosti",
+      "author": "Vondrášková, Marie",
+      "summary": "Sebekritická vnitřní řeč silně pozitivně koreluje s úzkostností ( $r=0,47$ ), zatímco sebeposilující vnitřní řeč je prediktorem nižší úzkostnosti.",
+      "citation": "Vondrášková, M. (2021). Vnitřní řeč, sebeuvědomění a úzkost. Diplomová práce, Univerzita Palackého v Olomouci.",
+      "publisher": "Theses (Diplomová práce)",
+      "links": {
+        "url": ""
+      }
+    },
+    "zkostn-poruchy-a-jejich-l-ba": {
+      "id": "zkostn-poruchy-a-jejich-l-ba",
+      "title": "Úzkostné poruchy a jejich léčba",
+      "author": "PharmDr. Ivana Tašková",
+      "summary": "Lékem první volby u úzkostných poruch jsou antidepresiva SSRI (např. sertralin). Důležitá je pomalá titrace a v akutní fázi dočasné podávání benzodiazepinů (max. 8 týdnů).",
+      "citation": "7",
+      "publisher": "Úzkostné poruchy a jejich léčba - Farmacie pro praxi",
+      "links": {
+        "url": "Farmakologie"
+      }
+    },
     "adicare-zavislost-na-jidle": {
       "id": "adicare-zavislost-na-jidle",
       "title": "Závislost na jídle, psychogenní přejídání",

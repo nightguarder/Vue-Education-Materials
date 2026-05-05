@@ -1,0 +1,10 @@
+{
+  "id": "porozumet-depresi-a-uzkosti",
+  "title": "Jak porozumět depresi a překonat úzkost",
+  "theme": "mental-health",
+  "type": "episode",
+  "subtype": "summary",
+  "asset_url": "./audio.m4a",
+  "tags": ["deprese", "úzkost", "duševní zdraví", "léčba"],
+  "sources": ["prasko-depresivni-porucha", "psymed-stres-uzkost"]
+}

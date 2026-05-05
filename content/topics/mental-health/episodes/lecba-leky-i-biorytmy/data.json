@@ -1,0 +1,10 @@
+{
+  "id": "lecba-leky-i-biorytmy",
+  "title": "Léčba úzkosti a deprese: léky i biorytmy",
+  "theme": "mental-health",
+  "type": "episode",
+  "subtype": "summary",
+  "asset_url": "./audio.m4a",
+  "tags": ["léčba", "biorytmy", "deprese", "úzkost", "životní styl"],
+  "sources": ["tasova-uzkostne-poruchy", "prasko-depresivni-porucha"]
+}
