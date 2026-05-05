@@ -11,7 +11,7 @@
         "životní styl",
         "prevence"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/post.md",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/README.md",
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/thumbnail.webp"
     },
     {
@@ -25,7 +25,7 @@
         "životní styl",
         "léčba"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/post.md",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/README.md",
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/thumbnail.webp"
     },
     {
@@ -39,7 +39,7 @@
         "životní styl",
         "celostní přístup"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/post.md",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/README.md",
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/thumbnail.webp"
     },
     {
@@ -59,10 +59,31 @@
         "psychiatrie",
         "vzdělávání"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/post.md"
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/README.md"
     }
   ],
   "episodes": [
+    {
+      "id": "lecba-leky-i-biorytmy",
+      "title": "Léčba úzkosti a deprese: léky i biorytmy",
+      "theme": "mental-health",
+      "type": "episode",
+      "subtype": "summary",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/audio.m4a",
+      "tags": [
+        "léčba",
+        "biorytmy",
+        "deprese",
+        "úzkost",
+        "životní styl"
+      ],
+      "sources": [
+        "tasova-uzkostne-poruchy",
+        "prasko-depresivni-porucha"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/README.md"
+    },
     {
       "id": "porozumet-depresi-a-uzkosti",
       "title": "Jak porozumět depresi a překonat úzkost",
@@ -80,7 +101,8 @@
         "prasko-depresivni-porucha",
         "psymed-stres-uzkost"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/README.md"
     },
     {
       "id": "jidlo-jako-evolucni-dudlik",
@@ -98,7 +120,8 @@
         "mozek",
         "závislost"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/README.md"
     },
     {
       "id": "keto-dieta-jako-lek",
@@ -116,7 +139,8 @@
         "psychiatrie",
         "souhrn"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/README.md"
     },
     {
       "id": "lecba-nemoci-keto-dietou",
@@ -135,7 +159,8 @@
         "keto",
         "vážná-onemocnění"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/README.md"
     }
   ],
   "presentations": [
@@ -151,7 +176,7 @@
         "léčba",
         "životní styl"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/page.md",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/README.md",
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/thumbnail.webp"
     },
     {
@@ -165,7 +190,7 @@
         "metabolic",
         "overview"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/page.md",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/README.md",
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/thumbnail.webp"
     }
   ],

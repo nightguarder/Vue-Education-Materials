@@ -56,7 +56,7 @@ topicDirs.forEach(topic => {
 });
 
 // Helper function to process items
-function processItems(type, folderPattern, contentFileName) {
+function processItems(type, folderPattern, fallbackContentFileName) {
     const files = getFiles(TOPICS_DIR, 'data.json').filter(f => f.includes(`/${folderPattern}/`));
     files.forEach(file => {
         const data = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -69,8 +69,9 @@ function processItems(type, folderPattern, contentFileName) {
             data.thumbnail_url = BASE_URL + '/assets/thumbnails/Vue Podcast logo.png';
         }
 
-        const contentPath = fs.existsSync(path.join(dir, contentFileName)) ? path.join(dir, contentFileName) : 
-                            fs.existsSync(path.join(dir, 'README.md')) ? path.join(dir, 'README.md') : null;
+        // Always prioritize README.md for GitHub Pages browsability
+        const contentPath = fs.existsSync(path.join(dir, 'README.md')) ? path.join(dir, 'README.md') : 
+                            fs.existsSync(path.join(dir, fallbackContentFileName)) ? path.join(dir, fallbackContentFileName) : null;
         
         if (contentPath) {
             data.content_path = BASE_URL + '/' + path.relative(ROOT_DIR, contentPath);
