@@ -2,12 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const CONTENT_DIR = path.join(__dirname, '../content');
+const TOPICS_DIR = path.join(__dirname, '../content/topics');
 const ROOT_DIR = path.join(__dirname, '..');
 const BASE_URL = 'https://nightguarder.github.io/Vue-Education-Materials';
 
 function getFiles(dir, filename) {
     const results = [];
+    if (!fs.existsSync(dir)) return results;
     const list = fs.readdirSync(dir);
     list.forEach(file => {
         const filePath = path.join(dir, file);
@@ -21,63 +22,67 @@ function getFiles(dir, filename) {
     return results;
 }
 
-function normalizeAssetUrl(url) {
-    if (url.startsWith('/')) {
-        return BASE_URL + url;
+function normalizeAssetUrl(assetUrl, filePath) {
+    if (assetUrl.startsWith('./')) {
+        const dirRelToRoot = path.relative(ROOT_DIR, path.dirname(filePath));
+        return BASE_URL + '/' + dirRelToRoot + '/' + assetUrl.substring(2);
     }
-    return url;
+    if (assetUrl.startsWith('/')) {
+        return BASE_URL + assetUrl;
+    }
+    return assetUrl;
 }
 
 const manifest = {
     infographics: [],
     episodes: [],
+    presentations: [],
     sources: {}
 };
 
-// Index Sources
-const sourceFiles = fs.readdirSync(path.join(CONTENT_DIR, 'sources'));
-sourceFiles.forEach(file => {
-    if (file.endsWith('.json')) {
-        const data = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'sources', file), 'utf8'));
-        manifest.sources[data.id] = data;
+// Index Sources from all topics
+const topicDirs = fs.existsSync(TOPICS_DIR) ? fs.readdirSync(TOPICS_DIR) : [];
+topicDirs.forEach(topic => {
+    const sourcesDir = path.join(TOPICS_DIR, topic, 'sources');
+    if (fs.existsSync(sourcesDir)) {
+        const sourceFiles = fs.readdirSync(sourcesDir);
+        sourceFiles.forEach(file => {
+            if (file.endsWith('.json')) {
+                const data = JSON.parse(fs.readFileSync(path.join(sourcesDir, file), 'utf8'));
+                manifest.sources[data.id] = data;
+            }
+        });
     }
 });
 
-// Index Infographics
-const infoDataFiles = getFiles(path.join(CONTENT_DIR, 'infographics'), 'data.json');
-infoDataFiles.forEach(file => {
-    const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-    const dir = path.dirname(file);
-    const postPath = path.join(dir, 'post.md');
-    
-    data.asset_url = normalizeAssetUrl(data.asset_url);
-    if (data.thumbnail_url) {
-        data.thumbnail_url = normalizeAssetUrl(data.thumbnail_url);
-    }
+// Helper function to process items
+function processItems(type, folderPattern, contentFileName) {
+    const files = getFiles(TOPICS_DIR, 'data.json').filter(f => f.includes(`/${folderPattern}/`));
+    files.forEach(file => {
+        const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+        const dir = path.dirname(file);
+        
+        data.asset_url = normalizeAssetUrl(data.asset_url, file);
+        if (data.thumbnail_url) {
+            data.thumbnail_url = normalizeAssetUrl(data.thumbnail_url, file);
+        } else if (type === 'episode') {
+            data.thumbnail_url = BASE_URL + '/assets/thumbnails/Vue Podcast logo.png';
+        }
 
-    if (fs.existsSync(postPath)) {
-        data.content_path = BASE_URL + '/content/' + path.relative(CONTENT_DIR, postPath);
-    }
-    manifest.infographics.push(data);
-});
+        const contentPath = fs.existsSync(path.join(dir, contentFileName)) ? path.join(dir, contentFileName) : 
+                            fs.existsSync(path.join(dir, 'README.md')) ? path.join(dir, 'README.md') : null;
+        
+        if (contentPath) {
+            data.content_path = BASE_URL + '/' + path.relative(ROOT_DIR, contentPath);
+        }
+        manifest[type + 's'].push(data);
+    });
+}
 
-// Index Episodes
-const episodeDataFiles = getFiles(path.join(CONTENT_DIR, 'episodes'), 'data.json');
-episodeDataFiles.forEach(file => {
-    const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-    const dir = path.dirname(file);
-    const notesPath = path.join(dir, 'notes.md');
-
-    data.asset_url = normalizeAssetUrl(data.asset_url);
-    
-    // Add default podcast thumbnail
-    data.thumbnail_url = BASE_URL + '/assets/thumbnails/Vue Podcast logo.png';
-
-    if (fs.existsSync(notesPath)) {
-        data.content_path = BASE_URL + '/content/' + path.relative(CONTENT_DIR, notesPath);
-    }
-    manifest.episodes.push(data);
-});
+// Index Items
+processItems('infographic', 'infographics', 'post.md');
+processItems('episode', 'episodes', 'notes.md');
+processItems('presentation', 'presentations', 'page.md');
 
 fs.writeFileSync(
     path.join(ROOT_DIR, 'manifest.json'),
@@ -90,7 +95,9 @@ console.log('Manifest generated successfully at /manifest.json');
 try {
     console.log('Triggering thumbnail generation...');
     const thumbScript = path.join(__dirname, 'generate-thumbnails.js');
-    execSync('node "' + thumbScript + '"', { stdio: 'inherit' });
+    if (fs.existsSync(thumbScript)) {
+        execSync('node "' + thumbScript + '"', { stdio: 'inherit' });
+    }
 } catch (e) {
     console.error('Thumbnail generation failed, but manifest was created.');
 }

@@ -5,7 +5,8 @@
       "title": "Dieta při léčbě duševních onemocnění",
       "theme": "metabolic-psychiatry",
       "type": "infographic",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/infographics/dieta-pri-lecbe.png",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/image.png",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/thumbnail.webp",
       "sources": [
         "nzip-dieta-uvod",
         "paul-nutrient-deficiencies",
@@ -16,8 +17,7 @@
         "psychiatrie",
         "vzdělávání"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/infographics/metabolic-psychiatry/post.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/dieta-pri-lecbe-thumb.webp"
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/post.md"
     }
   ],
   "episodes": [
@@ -27,7 +27,7 @@
       "theme": "metabolic-psychiatry",
       "type": "episode",
       "subtype": "summary",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Jídlo_jako_evoluční_dudlík_pro_mozek.m4a",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/audio.m4a",
       "sources": [
         "adicare-zavislost-na-jidle",
         "sunrise-detox-amino-acid-therapy"
@@ -45,7 +45,7 @@
       "theme": "metabolic-psychiatry",
       "type": "episode",
       "subtype": "summary",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Keto_dieta_jako_lék_na_psychiku.m4a",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/audio.m4a",
       "sources": [
         "campbell-keto-bipolar",
         "ede-ketogenic-psychiatry"
@@ -63,7 +63,7 @@
       "theme": "metabolic-psychiatry",
       "type": "episode",
       "subtype": "debate",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Léčba_vážných_duševních_nemocí_keto_dietou.m4a",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/audio.m4a",
       "sources": [
         "campbell-keto-bipolar",
         "swiss-re-metabolic-psychiatry",
@@ -75,6 +75,22 @@
         "vážná-onemocnění"
       ],
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png"
+    }
+  ],
+  "presentations": [
+    {
+      "id": "the-metabolic-blueprint",
+      "title": "The Metabolic Blueprint",
+      "theme": "metabolic-psychiatry",
+      "type": "presentation",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/presentation.pdf",
+      "tags": [
+        "blueprint",
+        "metabolic",
+        "overview"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/page.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/thumbnail.webp"
     }
   ],
   "sources": {

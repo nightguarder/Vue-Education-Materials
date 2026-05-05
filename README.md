@@ -2,31 +2,28 @@
 
 This repository serves as a headless CMS and asset host for the Vue Education platform. It provides structured data, metadata, and assets for educational materials.
 
+## Structure
+
+The project is organized by **topics** to keep related content and assets together.
+
+- `content/topics/`: Contains all educational content grouped by topic.
+  - `[topic-id]/`:
+    - `README.md`: Overview of the topic (rendered on GitHub).
+    - `episodes/`: Podcast episodes. Each folder contains `data.json`, `audio.m4a`, and optionally `notes.md`.
+    - `infographics/`: Visual materials. Each folder contains `data.json`, `image.png`, `post.md`, and `thumbnail.webp`.
+    - `sources/`: JSON data for citations and sources specific to the topic.
+    - `presentations/`: PDF and other presentation materials.
+- `assets/`: Shared global assets (e.g., brand logos).
+- `manifest.json`: Automatically generated index of all content, used by the Vue app.
+- `scripts/`: Utilities for generating the manifest and thumbnails.
+
 ## Quick Navigation
 
 - **[View Manifest (API)](https://nightguarder.github.io/Vue-Education-Materials/manifest.json)** - Structured JSON index of all materials
-- **[Browse Assets Folder](https://nightguarder.github.io/Vue-Education-Materials/assets/)** - Direct access to all infographics, audio, and thumbnails
-- **[Browse Content Folder](https://nightguarder.github.io/Vue-Education-Materials/content/)** - Markdown posts and JSON sources
+- **[Browse Topics](content/topics/)** - Direct access to all educational materials
 
-## Table of Contents
-
-- [Topic: Diet During Psychiatric Treatment (Metabolic Psychiatry)](#topic-diet-during-psychiatric-treatment-metabolic-psychiatry)
-  - [Infographics](#1-infographics)
-  - [Podcast Episodes](#2-podcast-episodes)
-
----
-
-## Topic: Diet During Psychiatric Treatment (Metabolic Psychiatry)
-
-### 1. Infographics
-- **[Dieta při léčbě duševních onemocnění](https://nightguarder.github.io/Vue-Education-Materials/assets/infographics/dieta-pri-lecbe.png)** ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/dieta-pri-lecbe-thumb.webp))
-  - [Read more (Post)](https://nightguarder.github.io/Vue-Education-Materials/content/infographics/metabolic-psychiatry/post.md)
-  - [View Sources](https://nightguarder.github.io/Vue-Education-Materials/content/sources/)
-
-### 2. Podcast Episodes
-- **[Keto dieta jako lék na psychiku](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Keto_dieta_jako_lék_na_psychiku.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
-- **[Jídlo jako evoluční dudlík pro mozek](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Jídlo_jako_evoluční_dudlík_pro_mozek.m4a)** (Summary) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
-- **[Léčba vážných duševních nemocí keto dietou](https://nightguarder.github.io/Vue-Education-Materials/assets/audio/Léčba_vážných_duševních_nemocí_keto_dietou.m4a)** (Debate) ([Thumbnail](https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue%20Podcast%20logo.png))
+### Current Topics
+- **[Metabolic Psychiatry](content/topics/metabolic-psychiatry/)**
 
 ---
 
@@ -34,7 +31,6 @@ This repository serves as a headless CMS and asset host for the Vue Education pl
 The primary API endpoint for the Vue application is the `manifest.json`.
 
 - **Manifest URL**: `https://nightguarder.github.io/Vue-Education-Materials/manifest.json`
-- **Asset Root**: `https://nightguarder.github.io/Vue-Education-Materials/assets/`
 
 ## Development and Maintenance
 
@@ -42,15 +38,17 @@ The primary API endpoint for the Vue application is the `manifest.json`.
 - **Node.js**: Required to run management scripts.
 - **ImageMagick**: Required for automatic thumbnail generation.
 
-### Running Scripts
-To update the manifest and regenerate thumbnails after adding new content:
+### Adding Content
+1. Create a new folder in `content/topics/` or add to an existing one.
+2. Add your content (audio, images, markdown).
+3. Create/update `data.json` for each item. Use relative paths for assets (e.g., `"asset_url": "./audio.m4a"`).
+4. Run the generation script:
 
 ```bash
 # Generate manifest and thumbnails
 node scripts/generate-manifest.js
 ```
 
-### Notes on Content
-- **Large Assets**: Audio (`.m4a`) and high-res Infographics (`.png`) should be placed in `assets/audio/` and `assets/infographics/` respectively.
-- **Metadata**: Every new material must have a corresponding `data.json` and `.md` file in the `content/` directory to be indexed.
-- **Thumbnails**: Infographic thumbnails are automatically generated as optimized `.webp` files in `assets/thumbnails/`. Podcasts use the default branded logo at `assets/thumbnails/Vue Podcast logo.png`.
+### Automation
+- **Manifest**: `scripts/generate-manifest.js` scans the `topics` folder and builds the global index.
+- **Thumbnails**: `scripts/generate-thumbnails.js` (triggered by the manifest script) automatically generates `.webp` thumbnails for infographics if a source image is found.

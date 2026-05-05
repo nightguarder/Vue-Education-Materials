@@ -1,0 +1,13 @@
+{
+  "id": "keto-dieta-jako-lek",
+  "title": "Keto dieta jako lék na psychiku",
+  "theme": "metabolic-psychiatry",
+  "type": "episode",
+  "subtype": "summary",
+  "asset_url": "./audio.m4a",
+  "sources": [
+    "campbell-keto-bipolar",
+    "ede-ketogenic-psychiatry"
+  ],
+  "tags": ["keto", "psychiatrie", "souhrn"]
+}
