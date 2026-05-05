@@ -25,6 +25,7 @@ The project is organized by **topics** to keep related content and assets togeth
 ### Current Topics
 - **[Metabolic Psychiatry](content/topics/metabolic-psychiatry/)**
 - **[Mental Health](content/topics/mental-health/)**
+- **[Adiktologie](content/topics/adiktologie/)**
 
 ---
 

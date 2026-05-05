@@ -1,6 +1,21 @@
 {
   "infographics": [
     {
+      "id": "moderni-lecba-zavislosti",
+      "title": "Moderní přístup k léčbě závislostí",
+      "theme": "adiktologie",
+      "type": "infographic",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/image.png",
+      "tags": [
+        "adiktologie",
+        "léčba",
+        "moderní přístup"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/README.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/thumbnail.webp",
+      "orientation": "landscape"
+    },
+    {
       "id": "dusevni-zdravi-a-zivotni-styl-1",
       "title": "Duševní zdraví a životní styl I",
       "theme": "mental-health",
@@ -12,7 +27,8 @@
         "prevence"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/thumbnail.webp",
+      "orientation": "portrait"
     },
     {
       "id": "dusevni-zdravi-a-zivotni-styl-2",
@@ -26,7 +42,8 @@
         "léčba"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/thumbnail.webp",
+      "orientation": "landscape"
     },
     {
       "id": "dusevni-zdravi-a-zivotni-styl-3",
@@ -40,7 +57,8 @@
         "celostní přístup"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/thumbnail.webp",
+      "orientation": "portrait"
     },
     {
       "id": "dieta-pri-lecbe",
@@ -59,10 +77,43 @@
         "psychiatrie",
         "vzdělávání"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/README.md"
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/infographics/dieta-pri-lecbe/README.md",
+      "orientation": "portrait"
     }
   ],
   "episodes": [
+    {
+      "id": "crafft-prevence",
+      "title": "Stačí dotazník CRAFFT k prevenci závislostí dětí?",
+      "theme": "adiktologie",
+      "type": "episode",
+      "subtype": "debate",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/audio.m4a",
+      "tags": [
+        "CRAFFT",
+        "prevence",
+        "screening",
+        "děti"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/README.md"
+    },
+    {
+      "id": "puberta-nebo-diagnoza",
+      "title": "Kdy se z puberty stává diagnóza",
+      "theme": "adiktologie",
+      "type": "episode",
+      "subtype": "summary",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/audio.m4a",
+      "tags": [
+        "adiktologie",
+        "puberta",
+        "prevence",
+        "mládež"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/README.md"
+    },
     {
       "id": "lecba-leky-i-biorytmy",
       "title": "Léčba úzkosti a deprese: léky i biorytmy",
@@ -165,6 +216,22 @@
   ],
   "presentations": [
     {
+      "id": "adolescent-addiction-triage",
+      "title": "Adolescent Addiction Triage Blueprint",
+      "theme": "adiktologie",
+      "type": "presentation",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/presentation.pdf",
+      "tags": [
+        "triage",
+        "adolescents",
+        "addiction",
+        "blueprint"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/README.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/thumbnail.webp",
+      "orientation": "landscape"
+    },
+    {
       "id": "path-to-relief",
       "title": "Path to Relief: Průvodce duševním zdravím",
       "theme": "mental-health",
@@ -177,7 +244,8 @@
         "životní styl"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/thumbnail.webp",
+      "orientation": "landscape"
     },
     {
       "id": "the-metabolic-blueprint",
@@ -191,7 +259,8 @@
         "overview"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/thumbnail.webp",
+      "orientation": "landscape"
     }
   ],
   "sources": {
