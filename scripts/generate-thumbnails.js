@@ -31,22 +31,34 @@ function generateThumbnails() {
                 const thumbFilename = 'thumbnail.webp';
                 const destPath = path.join(dir, thumbFilename);
 
-                console.log('Generating thumbnail for ' + item.id + ' (' + section + ')...');
+                console.log(`Processing ${item.id} (${section})...`);
+                
                 try {
-                    // For PDFs, we take the first page [0]
+                    // 1. Detect orientation using ImageMagick identify
                     const inputSpec = sourcePath.toLowerCase().endsWith('.pdf') ? sourcePath + '[0]' : sourcePath;
+                    const dimensions = execSync(`magick identify -format "%w %h" "${inputSpec}"`).toString().trim().split(' ');
+                    const width = parseInt(dimensions[0]);
+                    const height = parseInt(dimensions[1]);
                     
-                    execSync('magick "' + inputSpec + '" -resize 400x -quality 80 "' + destPath + '"');
+                    let orientation = 'square';
+                    if (width > height * 1.2) {
+                        orientation = 'landscape';
+                    } else if (height > width * 1.2) {
+                        orientation = 'portrait';
+                    }
+                    
+                    manifest[section][index].orientation = orientation;
+                    updated = true;
+
+                    // 2. Generate thumbnail
+                    execSync(`magick "${inputSpec}" -resize 400x -quality 80 "${destPath}"`);
                     
                     const relativeDestPath = path.relative(ROOT_DIR, destPath);
                     manifest[section][index].thumbnail_url = BASE_URL + '/' + relativeDestPath;
-                    updated = true;
-                    console.log('Successfully created ' + destPath);
+                    console.log(`  - Orientation: ${orientation}`);
+                    console.log(`  - Thumbnail: ${destPath}`);
                 } catch (error) {
-                    console.error('Failed to generate thumbnail for ' + item.id + ':', error.message);
-                    if (sourcePath.toLowerCase().endsWith('.pdf')) {
-                        console.warn('Note: PDF thumbnail generation requires Ghostscript to be installed.');
-                    }
+                    console.error(`Failed to process ${item.id}:`, error.message);
                 }
             }
         });
@@ -54,7 +66,7 @@ function generateThumbnails() {
 
     if (updated) {
         fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
-        console.log('Manifest updated with thumbnail URLs.');
+        console.log('Manifest updated with orientations and thumbnail URLs.');
     }
 }
 
