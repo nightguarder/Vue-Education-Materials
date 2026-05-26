@@ -113,9 +113,9 @@
       "sources": [
         "foundations-frameworks-childhood-adhd"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/thumbnail.webp"
     },
     {
       "id": "crafft-prevence",
@@ -130,9 +130,9 @@
         "screening",
         "děti"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/thumbnail.webp"
     },
     {
       "id": "puberta-nebo-diagnoza",
@@ -147,9 +147,9 @@
         "prevence",
         "mládež"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/thumbnail.webp"
     },
     {
       "id": "lecba-leky-i-biorytmy",
@@ -169,9 +169,9 @@
         "tasova-uzkostne-poruchy",
         "prasko-depresivni-porucha"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/thumbnail.webp"
     },
     {
       "id": "porozumet-depresi-a-uzkosti",
@@ -190,9 +190,9 @@
         "prasko-depresivni-porucha",
         "psymed-stres-uzkost"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/thumbnail.webp"
     },
     {
       "id": "jidlo-jako-evolucni-dudlik",
@@ -210,9 +210,9 @@
         "mozek",
         "závislost"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/thumbnail.webp"
     },
     {
       "id": "keto-dieta-jako-lek",
@@ -230,9 +230,9 @@
         "psychiatrie",
         "souhrn"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/thumbnail.webp"
     },
     {
       "id": "lecba-nemoci-keto-dietou",
@@ -251,9 +251,9 @@
         "keto",
         "vážná-onemocnění"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/thumbnail.webp",
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/README.md",
-      "orientation": "square"
+      "orientation": "square",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/thumbnail.webp"
     }
   ],
   "presentations": [

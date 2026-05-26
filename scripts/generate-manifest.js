@@ -65,8 +65,6 @@ function processItems(type, folderPattern, fallbackContentFileName) {
         data.asset_url = normalizeAssetUrl(data.asset_url, file);
         if (data.thumbnail_url) {
             data.thumbnail_url = normalizeAssetUrl(data.thumbnail_url, file);
-        } else if (type === 'episode') {
-            data.thumbnail_url = BASE_URL + '/assets/thumbnails/Vue Podcast logo.png';
         }
 
         // Always prioritize README.md for GitHub Pages browsability
