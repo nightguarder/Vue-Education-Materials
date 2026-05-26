@@ -1,0 +1,10 @@
+{
+  "id": "vas-klid-je-lek",
+  "title": "Váš klid je lék na dětský vztek",
+  "theme": "adhd-u-deti",
+  "type": "episode",
+  "subtype": "summary",
+  "asset_url": "./audio.m4a",
+  "tags": ["ADHD", "výchova", "emoce", "rodičovství"],
+  "sources": ["foundations-frameworks-childhood-adhd"]
+}

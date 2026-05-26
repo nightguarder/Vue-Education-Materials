@@ -1,6 +1,21 @@
 {
   "infographics": [
     {
+      "id": "podpora-vyvoje-adhd",
+      "title": "Podpora zdravého vývoje u dětí s ADHD",
+      "theme": "adhd-u-deti",
+      "type": "infographic",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/infographics/podpora-vyvoje-adhd/image.png",
+      "tags": [
+        "ADHD",
+        "vývoj",
+        "podpora"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/infographics/podpora-vyvoje-adhd/README.md",
+      "orientation": "portrait",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/infographics/podpora-vyvoje-adhd/thumbnail.webp"
+    },
+    {
       "id": "moderni-lecba-zavislosti",
       "title": "Moderní přístup k léčbě závislostí",
       "theme": "adiktologie",
@@ -12,8 +27,8 @@
         "moderní přístup"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/thumbnail.webp",
-      "orientation": "landscape"
+      "orientation": "landscape",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/thumbnail.webp"
     },
     {
       "id": "dusevni-zdravi-a-zivotni-styl-1",
@@ -27,8 +42,8 @@
         "prevence"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/thumbnail.webp",
-      "orientation": "portrait"
+      "orientation": "portrait",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-1/thumbnail.webp"
     },
     {
       "id": "dusevni-zdravi-a-zivotni-styl-2",
@@ -42,8 +57,8 @@
         "léčba"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/thumbnail.webp",
-      "orientation": "landscape"
+      "orientation": "landscape",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-2/thumbnail.webp"
     },
     {
       "id": "dusevni-zdravi-a-zivotni-styl-3",
@@ -57,8 +72,8 @@
         "celostní přístup"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/thumbnail.webp",
-      "orientation": "portrait"
+      "orientation": "portrait",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/infographics/dusevni-zdravi-a-zivotni-styl-3/thumbnail.webp"
     },
     {
       "id": "dieta-pri-lecbe",
@@ -83,6 +98,26 @@
   ],
   "episodes": [
     {
+      "id": "vas-klid-je-lek",
+      "title": "Váš klid je lék na dětský vztek",
+      "theme": "adhd-u-deti",
+      "type": "episode",
+      "subtype": "summary",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/audio.m4a",
+      "tags": [
+        "ADHD",
+        "výchova",
+        "emoce",
+        "rodičovství"
+      ],
+      "sources": [
+        "foundations-frameworks-childhood-adhd"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/README.md",
+      "orientation": "square"
+    },
+    {
       "id": "crafft-prevence",
       "title": "Stačí dotazník CRAFFT k prevenci závislostí dětí?",
       "theme": "adiktologie",
@@ -95,8 +130,9 @@
         "screening",
         "děti"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/README.md",
+      "orientation": "square"
     },
     {
       "id": "puberta-nebo-diagnoza",
@@ -111,8 +147,9 @@
         "prevence",
         "mládež"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/README.md",
+      "orientation": "square"
     },
     {
       "id": "lecba-leky-i-biorytmy",
@@ -132,8 +169,9 @@
         "tasova-uzkostne-poruchy",
         "prasko-depresivni-porucha"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/README.md",
+      "orientation": "square"
     },
     {
       "id": "porozumet-depresi-a-uzkosti",
@@ -152,8 +190,9 @@
         "prasko-depresivni-porucha",
         "psymed-stres-uzkost"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/README.md",
+      "orientation": "square"
     },
     {
       "id": "jidlo-jako-evolucni-dudlik",
@@ -171,8 +210,9 @@
         "mozek",
         "závislost"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/README.md",
+      "orientation": "square"
     },
     {
       "id": "keto-dieta-jako-lek",
@@ -190,8 +230,9 @@
         "psychiatrie",
         "souhrn"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/README.md",
+      "orientation": "square"
     },
     {
       "id": "lecba-nemoci-keto-dietou",
@@ -210,8 +251,9 @@
         "keto",
         "vážná-onemocnění"
       ],
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/README.md"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/thumbnail.webp",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/README.md",
+      "orientation": "square"
     }
   ],
   "presentations": [
@@ -228,8 +270,8 @@
         "blueprint"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/thumbnail.webp",
-      "orientation": "landscape"
+      "orientation": "landscape",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/thumbnail.webp"
     },
     {
       "id": "path-to-relief",
@@ -244,8 +286,8 @@
         "životní styl"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/thumbnail.webp",
-      "orientation": "landscape"
+      "orientation": "landscape",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/presentations/path-to-relief/thumbnail.webp"
     },
     {
       "id": "the-metabolic-blueprint",
@@ -259,11 +301,20 @@
         "overview"
       ],
       "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/README.md",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/thumbnail.webp",
-      "orientation": "landscape"
+      "orientation": "landscape",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/presentations/the-metabolic-blueprint/thumbnail.webp"
     }
   ],
   "sources": {
+    "winnette-ace-attachment": {
+      "id": "winnette-ace-attachment",
+      "title": "Poradenství a terapie dětí s adverzními dětskými zkušenostmi (ACE) a narušeným vývojem attachmentových vztahů",
+      "author": "Petra Winnette",
+      "publisher": "NATAMA Publishing",
+      "date": "2021",
+      "summary": "Tato publikace vysvětluje, jak adverzní dětské zkušenosti (ACEs) narušují ranou architekturu mozku a zvyšují celoživotní riziko duševních i chronických fyzických onemocnění.",
+      "links": {}
+    },
     "behavior-ln-v-hov-intervence-u-v-n-du-evn-nemocn-ch": {
       "id": "behavior-ln-v-hov-intervence-u-v-n-du-evn-nemocn-ch",
       "title": "Behaviorální váhová intervence u vážně duševně nemocných",

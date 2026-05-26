@@ -97,7 +97,7 @@ try {
     console.log('Triggering thumbnail generation...');
     const thumbScript = path.join(__dirname, 'generate-thumbnails.js');
     if (fs.existsSync(thumbScript)) {
-        execSync('node "' + thumbScript + '"', { stdio: 'inherit' });
+        execSync('/opt/homebrew/bin/node "' + thumbScript + '"', { stdio: 'inherit' });
     }
 } catch (e) {
     console.error('Thumbnail generation failed, but manifest was created.');

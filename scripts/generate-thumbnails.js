@@ -6,6 +6,9 @@ const ROOT_DIR = path.join(__dirname, '..');
 const MANIFEST_PATH = path.join(ROOT_DIR, 'manifest.json');
 const BASE_URL = 'https://nightguarder.github.io/Vue-Education-Materials';
 
+const IMAGE_EXTS = ['.png', '.jpg', '.jpeg', '.gif', '.webp'];
+const SECTIONS = ['infographics', 'presentations', 'episodes'];
+
 function generateThumbnails() {
     if (!fs.existsSync(MANIFEST_PATH)) {
         console.error('Manifest not found. Run generate-manifest.js first.');
@@ -15,51 +18,66 @@ function generateThumbnails() {
     const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
     let updated = false;
 
-    const sections = ['infographics', 'presentations'];
-
-    sections.forEach(section => {
+    SECTIONS.forEach(section => {
         if (!manifest[section]) return;
-        
+
         manifest[section].forEach((item, index) => {
             if (!item.asset_url || !item.asset_url.startsWith(BASE_URL)) return;
-            
+
             const relativeUrlPath = item.asset_url.substring(BASE_URL.length);
-            const sourcePath = path.join(ROOT_DIR, relativeUrlPath);
-            
-            if (fs.existsSync(sourcePath)) {
-                const dir = path.dirname(sourcePath);
-                const thumbFilename = 'thumbnail.webp';
-                const destPath = path.join(dir, thumbFilename);
+            const assetPath = path.join(ROOT_DIR, relativeUrlPath);
+            const dir = path.dirname(assetPath);
 
-                console.log(`Processing ${item.id} (${section})...`);
-                
+            let sourcePath = null;
+            const ext = path.extname(assetPath).toLowerCase();
+
+            if (IMAGE_EXTS.includes(ext)) {
+                sourcePath = assetPath;
+            } else if (ext === '.pdf') {
+                const pngPath = path.join(dir, '.temp-thumb-source.png');
                 try {
-                    // 1. Detect orientation using ImageMagick identify
-                    const inputSpec = sourcePath.toLowerCase().endsWith('.pdf') ? sourcePath + '[0]' : sourcePath;
-                    const dimensions = execSync(`magick identify -format "%w %h" "${inputSpec}"`).toString().trim().split(' ');
-                    const width = parseInt(dimensions[0]);
-                    const height = parseInt(dimensions[1]);
-                    
-                    let orientation = 'square';
-                    if (width > height * 1.2) {
-                        orientation = 'landscape';
-                    } else if (height > width * 1.2) {
-                        orientation = 'portrait';
-                    }
-                    
-                    manifest[section][index].orientation = orientation;
-                    updated = true;
-
-                    // 2. Generate thumbnail
-                    execSync(`magick "${inputSpec}" -resize 400x -quality 80 "${destPath}"`);
-                    
-                    const relativeDestPath = path.relative(ROOT_DIR, destPath);
-                    manifest[section][index].thumbnail_url = BASE_URL + '/' + relativeDestPath;
-                    console.log(`  - Orientation: ${orientation}`);
-                    console.log(`  - Thumbnail: ${destPath}`);
-                } catch (error) {
-                    console.error(`Failed to process ${item.id}:`, error.message);
+                    execSync(`sips -s format png "${assetPath}" --out "${pngPath}" 2>/dev/null`);
+                    sourcePath = pngPath;
+                } catch (e) {
+                    console.log(`Skipping ${item.id}: cannot convert PDF`);
+                    return;
                 }
+            } else {
+                const candidates = ['podcast-cover.png', 'image.png'];
+                const found = candidates.find(f => fs.existsSync(path.join(dir, f)));
+                if (found) {
+                    sourcePath = path.join(dir, found);
+                } else {
+                    console.log(`Skipping ${item.id}: no image source found`);
+                    return;
+                }
+            }
+
+            if (!sourcePath || !fs.existsSync(sourcePath)) return;
+
+            const thumbFilename = 'thumbnail.webp';
+            const destPath = path.join(dir, thumbFilename);
+
+            console.log(`Processing ${item.id} (${section})...`);
+
+            try {
+                const pythonScript = path.join(__dirname, 'process-image.py');
+                const result = execSync(`python3 "${pythonScript}" "${sourcePath}" "${destPath}"`).toString().trim();
+                const { width, height, orientation } = JSON.parse(result);
+
+                manifest[section][index].orientation = orientation;
+                updated = true;
+
+                const relativeDestPath = path.relative(ROOT_DIR, destPath);
+                manifest[section][index].thumbnail_url = BASE_URL + '/' + relativeDestPath;
+                console.log(`  - Orientation: ${orientation}`);
+                console.log(`  - Thumbnail: ${destPath}`);
+
+                if (ext === '.pdf') {
+                    try { fs.unlinkSync(sourcePath); } catch (e) {}
+                }
+            } catch (error) {
+                console.error(`Failed to process ${item.id}:`, error.message);
             }
         });
     });
