@@ -1,0 +1,12 @@
+{
+  "id": "jak-spanek-zachranuje-dusevni-zdravi",
+  "title": "Jak spánek zachraňuje vaše duševní zdraví",
+  "theme": "improving-sleep",
+  "type": "episode",
+  "subtype": "podcast",
+  "asset_url": "./audio.m4a",
+  "sources": [
+    "impact-of-sleep-hygiene"
+  ],
+  "tags": ["spánek", "duševní-zdraví", "prevence", "podcast"]
+}

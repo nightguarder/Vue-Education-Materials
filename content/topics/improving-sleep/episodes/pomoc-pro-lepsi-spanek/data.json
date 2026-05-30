@@ -1,0 +1,11 @@
+{
+  "id": "pomoc-pro-lepsi-spanek",
+  "title": "Pomoc pro lepší spánek",
+  "theme": "improving-sleep",
+  "type": "episode",
+  "subtype": "summary",
+  "sources": [
+    "impact-of-sleep-hygiene"
+  ],
+  "tags": ["spánek", "hygiena", "rady", "souhrn"]
+}

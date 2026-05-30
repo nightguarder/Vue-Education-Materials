@@ -10,6 +10,7 @@ Tento sešit se zaměřuje na současné trendy v adiktologii, screeningové ná
 
 ## Infografiky
 - [Moderní přístup k léčbě závislostí](./infographics/moderni-lecba-zavislosti/)
+- [Pomoc adiktologa při léčbě závislosti](./infographics/pomoc-adiktologa-pri-lecbe/)
 
 ## Prezentace
 - [Adolescent Addiction Triage Blueprint](./presentations/adolescent-addiction-triage/)

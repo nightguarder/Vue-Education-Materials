@@ -31,6 +31,42 @@
       "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/moderni-lecba-zavislosti/thumbnail.webp"
     },
     {
+      "id": "pomoc-adiktologa-pri-lecbe",
+      "title": "Pomoc adiktologa při léčbě závislosti",
+      "theme": "adiktologie",
+      "type": "infographic",
+      "orientation": "portrait",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/pomoc-adiktologa-pri-lecbe/image.png",
+      "sources": [
+        "czech-addictology-services",
+        "czech-addictology-care-systems"
+      ],
+      "tags": [
+        "adiktologie",
+        "léčba",
+        "pomoc",
+        "infografika"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/pomoc-adiktologa-pri-lecbe/README.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/infographics/pomoc-adiktologa-pri-lecbe/thumbnail.webp"
+    },
+    {
+      "id": "tri-pilire-pro-lepsi-spanek",
+      "title": "Tři pilíře pro lepší spánek",
+      "theme": "improving-sleep",
+      "type": "infographic",
+      "orientation": "portrait",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/infographics/tri-pilire-pro-lepsi-spanek/image.png",
+      "tags": [
+        "spánek",
+        "pilíře",
+        "zdraví",
+        "infografika"
+      ],
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/infographics/tri-pilire-pro-lepsi-spanek/README.md",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/infographics/tri-pilire-pro-lepsi-spanek/thumbnail.webp"
+    },
+    {
       "id": "dusevni-zdravi-a-zivotni-styl-1",
       "title": "Duševní zdraví a životní styl I",
       "theme": "mental-health",
@@ -113,9 +149,8 @@
       "sources": [
         "foundations-frameworks-childhood-adhd"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adhd-u-deti/episodes/vas-klid-je-lek/README.md"
     },
     {
       "id": "crafft-prevence",
@@ -130,9 +165,8 @@
         "screening",
         "děti"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/crafft-prevence/README.md"
     },
     {
       "id": "puberta-nebo-diagnoza",
@@ -147,9 +181,65 @@
         "prevence",
         "mládež"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/episodes/puberta-nebo-diagnoza/README.md"
+    },
+    {
+      "id": "jak-spanek-zachranuje-dusevni-zdravi",
+      "title": "Jak spánek zachraňuje vaše duševní zdraví",
+      "theme": "improving-sleep",
+      "type": "episode",
+      "subtype": "podcast",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/episodes/jak-spanek-zachranuje-dusevni-zdravi/audio.m4a",
+      "sources": [
+        "impact-of-sleep-hygiene"
+      ],
+      "tags": [
+        "spánek",
+        "duševní-zdraví",
+        "prevence",
+        "podcast"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/episodes/jak-spanek-zachranuje-dusevni-zdravi/README.md"
+    },
+    {
+      "id": "pomoc-pro-lepsi-spanek",
+      "title": "Pomoc pro lepší spánek",
+      "theme": "improving-sleep",
+      "type": "episode",
+      "subtype": "summary",
+      "sources": [
+        "impact-of-sleep-hygiene"
+      ],
+      "tags": [
+        "spánek",
+        "hygiena",
+        "rady",
+        "souhrn"
+      ],
+      "asset_url": "",
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/episodes/pomoc-pro-lepsi-spanek/README.md"
+    },
+    {
+      "id": "spanek-jako-klinicky-lek-na-uzkost",
+      "title": "Spánek jako klinický lék na úzkost",
+      "theme": "improving-sleep",
+      "type": "episode",
+      "subtype": "podcast",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/episodes/spanek-jako-klinicky-lek-na-uzkost/audio.m4a",
+      "sources": [
+        "impact-of-sleep-hygiene"
+      ],
+      "tags": [
+        "spánek",
+        "úzkost",
+        "klinická péče",
+        "podcast"
+      ],
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/improving-sleep/episodes/spanek-jako-klinicky-lek-na-uzkost/README.md"
     },
     {
       "id": "lecba-leky-i-biorytmy",
@@ -169,9 +259,8 @@
         "tasova-uzkostne-poruchy",
         "prasko-depresivni-porucha"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/lecba-leky-i-biorytmy/README.md"
     },
     {
       "id": "porozumet-depresi-a-uzkosti",
@@ -190,70 +279,28 @@
         "prasko-depresivni-porucha",
         "psymed-stres-uzkost"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/mental-health/episodes/porozumet-depresi-a-uzkosti/README.md"
     },
     {
-      "id": "jidlo-jako-evolucni-dudlik",
-      "title": "Jídlo jako evoluční dudlík pro mozek",
+      "id": "nova-era-dusevniho-zdravi-jak-strava-meni-nas-mozek",
+      "title": "Nová éra duševního zdraví: Jak strava mění náš mozek",
       "theme": "metabolic-psychiatry",
       "type": "episode",
       "subtype": "summary",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/audio.m4a",
+      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/nova-era-dusevniho-zdravi-jak-strava-meni-nas-mozek/audio.m4a",
       "sources": [
         "adicare-zavislost-na-jidle",
         "sunrise-detox-amino-acid-therapy"
       ],
       "tags": [
-        "evoluce",
         "mozek",
-        "závislost"
+        "strava",
+        "duševní-zdraví",
+        "evoluce"
       ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/jidlo-jako-evolucni-dudlik/thumbnail.webp"
-    },
-    {
-      "id": "keto-dieta-jako-lek",
-      "title": "Keto dieta jako lék na psychiku",
-      "theme": "metabolic-psychiatry",
-      "type": "episode",
-      "subtype": "summary",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/audio.m4a",
-      "sources": [
-        "campbell-keto-bipolar",
-        "ede-ketogenic-psychiatry"
-      ],
-      "tags": [
-        "keto",
-        "psychiatrie",
-        "souhrn"
-      ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/keto-dieta-jako-lek/thumbnail.webp"
-    },
-    {
-      "id": "lecba-nemoci-keto-dietou",
-      "title": "Léčba vážných duševních nemocí keto dietou",
-      "theme": "metabolic-psychiatry",
-      "type": "episode",
-      "subtype": "debate",
-      "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/audio.m4a",
-      "sources": [
-        "campbell-keto-bipolar",
-        "swiss-re-metabolic-psychiatry",
-        "ede-ketogenic-psychiatry"
-      ],
-      "tags": [
-        "debata",
-        "keto",
-        "vážná-onemocnění"
-      ],
-      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/README.md",
-      "orientation": "square",
-      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/lecba-nemoci-keto-dietou/thumbnail.webp"
+      "thumbnail_url": "https://nightguarder.github.io/Vue-Education-Materials/assets/thumbnails/Vue Podcast logo.png",
+      "content_path": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/metabolic-psychiatry/episodes/nova-era-dusevniho-zdravi-jak-strava-meni-nas-mozek/README.md"
     }
   ],
   "presentations": [
@@ -263,6 +310,10 @@
       "theme": "adiktologie",
       "type": "presentation",
       "asset_url": "https://nightguarder.github.io/Vue-Education-Materials/content/topics/adiktologie/presentations/adolescent-addiction-triage/presentation.pdf",
+      "sources": [
+        "czech-addictology-services",
+        "czech-addictology-care-systems"
+      ],
       "tags": [
         "triage",
         "adolescents",
@@ -314,6 +365,36 @@
       "date": "2021",
       "summary": "Tato publikace vysvětluje, jak adverzní dětské zkušenosti (ACEs) narušují ranou architekturu mozku a zvyšují celoživotní riziko duševních i chronických fyzických onemocnění.",
       "links": {}
+    },
+    "czech-addictology-care-systems": {
+      "id": "czech-addictology-care-systems",
+      "title": "Czech Addictology Care Systems and Treatment Methodologies",
+      "author": "Society for Addictive Diseases & Clinic of Addictology (1. LF UK and VFN)",
+      "summary": "Ucelený přehled o systému adiktologické péče a léčby závislostí v ČR na základě bio-psycho-socio-spirituálního modelu.",
+      "citation": "Klinika Adiktologie 1. LF UK a VFN (2024). Czech Addictology Care Systems and Treatment Methodologies. Praha: Nakladatelství Karolinum.",
+      "links": {
+        "url": "https://www.adiktologie.cz"
+      }
+    },
+    "czech-addictology-services": {
+      "id": "czech-addictology-services",
+      "title": "Czech Republic Addictology Services and Strategic Framework Resources",
+      "author": "Society for Addictive Diseases & Clinic of Addictology (1. LF UK and VFN)",
+      "summary": "Komplexní přehled adiktologických služeb, vládních koncepcí, klinických doporučení a screeningových nástrojů pro dospívající a dospělé v České republice.",
+      "citation": "Klinika Adiktologie 1. LF UK a VFN (2024). Czech Republic Addictology Services and Strategic Framework Resources. Praha: Nakladatelství Karolinum.",
+      "links": {
+        "url": "https://www.adiktologie.cz"
+      }
+    },
+    "impact-of-sleep-hygiene": {
+      "id": "impact-of-sleep-hygiene",
+      "title": "Impact of Sleep Hygiene Practices and their Role in Managing Psychiatric Conditions",
+      "author": "Makr JMS",
+      "summary": "Analýza vlivu spánkové hygieny na průběh a zvládání různých psychiatrických onemocnění.",
+      "citation": "Makr JMS (2025). Impact of Sleep Hygiene Practices and their Role in Managing Psychiatric Conditions. Journal of Medicine and Psychiatric Research, 2(2), 289-292.",
+      "links": {
+        "url": "https://doi.org/10.36478/makrjms.2025.2.289.292"
+      }
     },
     "behavior-ln-v-hov-intervence-u-v-n-du-evn-nemocn-ch": {
       "id": "behavior-ln-v-hov-intervence-u-v-n-du-evn-nemocn-ch",
@@ -476,19 +557,6 @@
       "summary": "Komplexní učebnice dietologie zaměřená na klinickou praxi a nutriční management různých onemocnění.",
       "links": {}
     },
-    "campbell-keto-bipolar": {
-      "id": "campbell-keto-bipolar",
-      "title": "Keto Diets for Bipolar",
-      "author": "Dr. Iain Campbell",
-      "affiliation": "University of Edinburgh",
-      "date": "2023",
-      "publication": "FMMH 2023 - Psychiatry Redefined",
-      "summary": "Details a pilot study on the use of a ketogenic diet for bipolar disorder.",
-      "links": {
-        "doi": "10.1101/2023.05.28.23290595",
-        "url": "https://www.ketobipolar.com"
-      }
-    },
     "culinary-services-nutrition-recovery": {
       "id": "culinary-services-nutrition-recovery",
       "title": "The Importance of Nutrition in Substance Use Recovery",
@@ -496,16 +564,6 @@
       "summary": "A guide highlighting the critical role of dietitians and nutrition services in the recovery process from substance use disorders.",
       "links": {
         "url": "https://www.culinaryservicesgroup.com"
-      }
-    },
-    "ede-ketogenic-psychiatry": {
-      "id": "ede-ketogenic-psychiatry",
-      "title": "Evidence Base for the Use of Ketogenic Diets in Psychiatry",
-      "author": "Dr. Georgia Ede, MD",
-      "organization": "Diagnosis Diet",
-      "summary": "Outlines the clinical rationale and ongoing clinical trials for ketogenic metabolic therapy in neuropsychiatric conditions.",
-      "links": {
-        "url": "https://www.diagnosisdiet.com/contact"
       }
     },
     "nzip-dieta-uvod": {

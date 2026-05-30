@@ -1,0 +1,13 @@
+{
+  "id": "pomoc-adiktologa-pri-lecbe",
+  "title": "Pomoc adiktologa při léčbě závislosti",
+  "theme": "adiktologie",
+  "type": "infographic",
+  "orientation": "portrait",
+  "asset_url": "./image.png",
+  "sources": [
+    "czech-addictology-services",
+    "czech-addictology-care-systems"
+  ],
+  "tags": ["adiktologie", "léčba", "pomoc", "infografika"]
+}

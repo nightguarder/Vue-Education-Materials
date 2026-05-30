@@ -23,6 +23,7 @@ function getFiles(dir, filename) {
 }
 
 function normalizeAssetUrl(assetUrl, filePath) {
+    if (!assetUrl) return '';
     if (assetUrl.startsWith('./')) {
         const dirRelToRoot = path.relative(ROOT_DIR, path.dirname(filePath));
         return BASE_URL + '/' + dirRelToRoot + '/' + assetUrl.substring(2);
@@ -65,6 +66,8 @@ function processItems(type, folderPattern, fallbackContentFileName) {
         data.asset_url = normalizeAssetUrl(data.asset_url, file);
         if (data.thumbnail_url) {
             data.thumbnail_url = normalizeAssetUrl(data.thumbnail_url, file);
+        } else if (type === 'episode') {
+            data.thumbnail_url = BASE_URL + '/assets/thumbnails/Vue Podcast logo.png';
         }
 
         // Always prioritize README.md for GitHub Pages browsability
@@ -95,7 +98,7 @@ try {
     console.log('Triggering thumbnail generation...');
     const thumbScript = path.join(__dirname, 'generate-thumbnails.js');
     if (fs.existsSync(thumbScript)) {
-        execSync('/opt/homebrew/bin/node "' + thumbScript + '"', { stdio: 'inherit' });
+        execSync('node "' + thumbScript + '"', { stdio: 'inherit' });
     }
 } catch (e) {
     console.error('Thumbnail generation failed, but manifest was created.');

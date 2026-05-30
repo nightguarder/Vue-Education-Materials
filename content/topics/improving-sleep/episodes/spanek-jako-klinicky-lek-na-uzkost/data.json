@@ -1,0 +1,12 @@
+{
+  "id": "spanek-jako-klinicky-lek-na-uzkost",
+  "title": "Spánek jako klinický lék na úzkost",
+  "theme": "improving-sleep",
+  "type": "episode",
+  "subtype": "podcast",
+  "asset_url": "./audio.m4a",
+  "sources": [
+    "impact-of-sleep-hygiene"
+  ],
+  "tags": ["spánek", "úzkost", "klinická péče", "podcast"]
+}

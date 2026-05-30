@@ -4,5 +4,9 @@
   "theme": "adiktologie",
   "type": "presentation",
   "asset_url": "./presentation.pdf",
+  "sources": [
+    "czech-addictology-services",
+    "czech-addictology-care-systems"
+  ],
   "tags": ["triage", "adolescents", "addiction", "blueprint"]
 }
